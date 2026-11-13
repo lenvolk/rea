@@ -74,6 +74,8 @@ uses `docs/specs/<domain>/<feature-slug>/spec.md`, one `plan.md` and `tasks.md`;
 individual architectural decisions use `docs/adr/<domain>/<decision-slug>.md`.
 Consult the [documentation directory](docs/README.md) before adding a guide.
 
+When asked to install or set up REA from this checkout for an agent (for example "install it for Claude Code"), follow [ai-setup.md](ai-setup.md). It covers prerequisites, the Windows native addon, the build, agent registration, and known Windows failures.
+
 Use [.nvmrc](.nvmrc) and `package.json#packageManager` for the pinned toolchain. Cursor Cloud may place older Node.js first on `PATH`; environment setup installs the pinned toolchain under `/usr/local/bin`. Prefix `PATH="/usr/local/bin:$PATH"` before `node` and `npm`.
 
 - `npm ci`: install locked dependencies.
